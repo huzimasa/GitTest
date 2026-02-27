@@ -1,0 +1,233 @@
+/*--------------------
+* 全体のスタイル 
+--------------------*/
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin: 20px auto;
+	color: #333;
+	background-color: #f8f9fa;
+	line-height: 1.6;
+	max-width: 600px;
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+	margin: 0;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+	width: 100%;
+	padding: 8px;
+	margin: 4px 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.required {
+	color: red;
+}
+
+/*--------------------
+* ボタンのスタイル
+--------------------*/
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	margin: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.button:hover {
+	background-color: #0056b3;
+}
+
+.button.danger {
+	background-color: #dc3545;
+}
+
+.button.danger:hover {
+	background-color: #c82333;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+}
+
+.button.active {
+	background-color: #007bff;
+	color: #fff;
+	border: 1px solid #0056b3;
+	cursor: default;
+	/* クリック不可を強調 */
+}
+
+/*--------------------  
+* 検索フォームのスタイル
+-------------------- */
+.search-box {
+	background-color: #ffffff;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.search-box h2 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.search-box .form-group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.search-box label {
+	width: 120px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.search-box input[type="text"],
+.search-box input[type="date"],
+.search-box select {
+	flex: 1;
+	width: auto;
+	/* 幅を自動調整 */
+	max-width: 150px;
+	/* 最大幅を設定 */
+}
+
+.search-box button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.search-box button:hover {
+	background-color: #0056b3;
+}
+
+/* 入会日(From)と入会日(To)を横並びにする */
+.form-group div {
+	display: inline-block;
+	margin-right: 10px;
+	/* 入力項目間のスペース */
+}
+
+.form-group div:last-child {
+	margin-right: 0;
+	/* 最後の項目の余白をなくす */
+}
+
+/*-------------------- 
+* テーブルのスタイル 
+-------------------- */
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 110%;
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+}
+
+th,
+td {
+	width: 100%;
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	white-space: normal;
+}
+
+th {
+	background-color: #f4f4f4;
+	text-align: left;
+	width: 30%;
+	white-space: nowrap;
+}
+
+td a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+td a:hover {
+	text-decoration: underline;
+}
+
+td input,
+td textarea {
+	padding: 4px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+small {
+	white-space: nowrap;
+}
+
+
+
+/*--------------------
+* ページ分け(ページネーション)
+--------------------*/
+.pagination a {
+	padding: 9px;
+	margin: auto;
+	text-decoration: none;
+	background-color: #007bff;
+	color: white;
+	border-radius: 3px;
+}
+
+.pagination a.active {
+	background-color: #0056b3;
+	font-weight: bold;
+}
+
+/*--------------------
+* 会員種別セレクトボックス
+--------------------*/
+.member-type-select {
+	font-size: 16px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+.member-type-select:focus {
+	border-color: #007BFF;
+	outline: none;
+}
